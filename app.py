@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 # Genius API token - can be set via environment variable or directly
-GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "QpmVcTdVEme9WMb3-fk10o_5tcXTtg0AnOPjZ5jous7dlQsILLseGjMqg72EeQff")
+GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "2TM3Bb0roDHGFfAYkIWYsFN3fj6n31cwktC68iadknzGs23loVxpPa9C-TB1KztZ")
 
 # Initialize Genius client
 if GENIUS_ACCESS_TOKEN != "kLEdmNYwdU5Do_efL-1vXX_SQwYxNn2-05fGZfR0-oT_Qzqib7cWmP3zExIx5dHN":
