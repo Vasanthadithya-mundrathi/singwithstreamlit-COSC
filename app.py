@@ -99,6 +99,6 @@ elif song_title and not genius:
 
 # Footer
 st.markdown("---")
-st.markdown("Built with ❤️ using Streamlit and the Genius API")
+st.markdown("Built using Streamlit and the Genius API")
 if __name__ == '__main__':
     st.run(host='0.0.0.0', port=port)
