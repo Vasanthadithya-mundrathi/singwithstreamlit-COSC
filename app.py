@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 import os
 
 # Configuration
+port = int(os.environ.get("PORT", 8501))  # Default to 8501 for local, Render will override
 st.set_page_config(
     page_title="Taylor Swift Lyrics Visualizer",
-    page_icon="🎵",
+    page_icon="🎵", 
     layout="wide"
 )
-
 # Genius API token - can be set via environment variable or directly
 GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "R26e_IIphluKwuxNzVURUOxnr5pT10L-iC12uHCftzS2S5ecYsMmB5XMc_Sj4hgu")
 
@@ -100,3 +100,5 @@ elif song_title and not genius:
 # Footer
 st.markdown("---")
 st.markdown("Built with ❤️ using Streamlit and the Genius API")
+if __name__ == '__main__':
+    st.run(host='0.0.0.0', port=port)
