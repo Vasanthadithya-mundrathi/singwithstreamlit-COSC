@@ -17,7 +17,7 @@ st.set_page_config(
 GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "R26e_IIphluKwuxNzVURUOxnr5pT10L-iC12uHCftzS2S5ecYsMmB5XMc_Sj4hgu")
 
 # Initialize Genius client
-if GENIUS_ACCESS_TOKEN != "WdJgb1rMGkQqEM1rO3BrHcmi820cHkhG5cX4eQZXI_xxrdzEeCDuDGjSRHoaEHgH":
+if GENIUS_ACCESS_TOKEN != "R26e_IIphluKwuxNzVURUOxnr5pT10L-iC12uHCftzS2S5ecYsMmB5XMc_Sj4hgu":
     genius = Genius(GENIUS_ACCESS_TOKEN)
     genius.verbose = False  # Turn off status messages
     genius.remove_section_headers = True  # Clean up lyrics
