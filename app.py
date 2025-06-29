@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 # Genius API token - can be set via environment variable or directly
-GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "kLEdmNYwdU5Do_efL-1vXX_SQwYxNn2-05fGZfR0-oT_Qzqib7cWmP3zExIx5dHN")
+GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "QpmVcTdVEme9WMb3-fk10o_5tcXTtg0AnOPjZ5jous7dlQsILLseGjMqg72EeQff")
 
 # Initialize Genius client
 if GENIUS_ACCESS_TOKEN != "kLEdmNYwdU5Do_efL-1vXX_SQwYxNn2-05fGZfR0-oT_Qzqib7cWmP3zExIx5dHN":
@@ -100,5 +100,3 @@ elif song_title and not genius:
 # Footer
 st.markdown("---")
 st.markdown("Built using Streamlit and the Genius API")
-if __name__ == '__main__':
-    st.run(host='0.0.0.0', port=port)
