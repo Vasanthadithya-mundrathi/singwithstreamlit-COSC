@@ -14,10 +14,10 @@ st.set_page_config(
     layout="wide"
 )
 # Genius API token - can be set via environment variable or directly
-GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "R26e_IIphluKwuxNzVURUOxnr5pT10L-iC12uHCftzS2S5ecYsMmB5XMc_Sj4hgu")
+GENIUS_ACCESS_TOKEN = os.getenv("GENIUS_ACCESS_TOKEN", "kLEdmNYwdU5Do_efL-1vXX_SQwYxNn2-05fGZfR0-oT_Qzqib7cWmP3zExIx5dHN")
 
 # Initialize Genius client
-if GENIUS_ACCESS_TOKEN != "R26e_IIphluKwuxNzVURUOxnr5pT10L-iC12uHCftzS2S5ecYsMmB5XMc_Sj4hgu":
+if GENIUS_ACCESS_TOKEN != "kLEdmNYwdU5Do_efL-1vXX_SQwYxNn2-05fGZfR0-oT_Qzqib7cWmP3zExIx5dHN":
     genius = Genius(GENIUS_ACCESS_TOKEN)
     genius.verbose = False  # Turn off status messages
     genius.remove_section_headers = True  # Clean up lyrics
